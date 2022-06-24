@@ -2,17 +2,31 @@ package ru.netology.radio;
 
 public class Radio {
     private int numberRadioStation;
-    private int levelValue;
+
+    private int maxLevelValue = 100;
+    private int minLevelValue = 0;
+    private int levelValue = 0;
+    private int quantityRadioStation = 10;
+    private int minNumberRadioStation = 0;
+    private int maxNumberRadioStation = quantityRadioStation - 1;
+
+    public Radio (int quantityRadioStation) {
+        this.maxNumberRadioStation = quantityRadioStation -1;
+    }
+
+    public Radio () {
+
+    }
 
     public int getNumberRadioStation (){
         return numberRadioStation;
     }
 
     public void setNumberRadioStation (int newNumberRadioStation) {
-        if (newNumberRadioStation > 9) {
+        if (newNumberRadioStation > maxNumberRadioStation) {
             return;
         }
-        if (newNumberRadioStation < 0) {
+        if (newNumberRadioStation < minNumberRadioStation) {
             return;
         }
         this.numberRadioStation = newNumberRadioStation;
@@ -23,33 +37,33 @@ public class Radio {
     }
 
     public void setLevelValue (int newLevelValue) {
-        if (newLevelValue > 10) {
+        if (newLevelValue > maxLevelValue) {
             return;
         }
-        if (newLevelValue < 0) {
+        if (newLevelValue < minLevelValue) {
             return;
         }
         this.levelValue = newLevelValue;
     }
 
     public void nextNumberRadioStation () {
-        if (numberRadioStation == 9) {
-            numberRadioStation = 0;
+        if (numberRadioStation == maxNumberRadioStation) {
+            numberRadioStation = minNumberRadioStation;
         } else {
             numberRadioStation++;
         }
     }
 
     public void prevNumberRadioStation () {
-        if (numberRadioStation == 0) {
-            numberRadioStation = 9;
+        if (numberRadioStation == minNumberRadioStation) {
+            numberRadioStation = maxNumberRadioStation;
         } else {
             numberRadioStation--;
         }
     }
 
     public void plusLevelValue () {
-        if (levelValue == 10) {
+        if (levelValue == maxLevelValue) {
             return;
         } else {
             levelValue++;
@@ -57,7 +71,7 @@ public class Radio {
     }
 
     public void minusLevelValue () {
-        if (levelValue == 0) {
+        if (levelValue == minLevelValue) {
             return;
         } else {
             levelValue--;
