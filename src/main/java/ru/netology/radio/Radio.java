@@ -20,7 +20,7 @@ public class Radio {
     private int maxNumberRadioStation = quantityRadioStation - 1;
 
 
-    public void setNumberRadioStation (int newNumberRadioStation) {
+    public void setNumberRadioStation(int newNumberRadioStation) {
         if (newNumberRadioStation > maxNumberRadioStation) {
             return;
         }
@@ -31,8 +31,7 @@ public class Radio {
     }
 
 
-
-    public void setLevelValue (int newLevelValue) {
+    public void setLevelValue(int newLevelValue) {
         if (newLevelValue > maxLevelValue) {
             return;
         }
@@ -41,7 +40,8 @@ public class Radio {
         }
         this.levelValue = newLevelValue;
     }
-    public void nextNumberRadioStation () {
+
+    public void nextNumberRadioStation() {
         if (numberRadioStation == maxNumberRadioStation) {
             numberRadioStation = minNumberRadioStation;
         } else {
@@ -49,7 +49,7 @@ public class Radio {
         }
     }
 
-    public void prevNumberRadioStation () {
+    public void prevNumberRadioStation() {
         if (numberRadioStation == minNumberRadioStation) {
             numberRadioStation = maxNumberRadioStation;
         } else {
@@ -57,7 +57,7 @@ public class Radio {
         }
     }
 
-    public void plusLevelValue () {
+    public void plusLevelValue() {
         if (levelValue == maxLevelValue) {
             return;
         } else {
@@ -65,7 +65,7 @@ public class Radio {
         }
     }
 
-    public void minusLevelValue () {
+    public void minusLevelValue() {
         if (levelValue == minLevelValue) {
             return;
         } else {
