@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0305bf68-991a-4e47-a8bc-6981c75b613b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/nextNumberWithQuantitiesDate.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/prevNumberWithQuantitiesDate.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/setNumberWithQuantitiesDate.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/radio/Radio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/radio/Radio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/radio/RadioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/radio/RadioTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/minusValueDate.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/minusValueDate.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/plusValueDate.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/plusValueDate.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/setValueDate.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/setValueDate.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,14 +32,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_directory_selection": "C:/Users/Public/Documents/QA/JavaMavenRadio/src/test/java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/Public/Documents/QA/JavaMavenRadio/src/test/java&quot;
   }
-}]]></component>
+}</component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean test" />
