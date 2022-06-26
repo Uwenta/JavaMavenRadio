@@ -17,6 +17,16 @@ public class RadioTest {
     }
 
     @ParameterizedTest
+    @CsvFileSource(files = "src/test/resources/setNumberWithQuantitiesDate.csv")
+    public void TestSetNumberRadioStation(int expected, int numberStation, int quantityRadioStation) {
+        Radio radio = new Radio(0, 100, 0, 0, quantityRadioStation, 0, quantityRadioStation - 1);
+        radio.setNumberRadioStation(numberStation);
+        int actual = radio.getNumberRadioStation();
+        Assertions.assertEquals(expected, actual);
+
+    }
+
+    @ParameterizedTest
     @CsvFileSource(files = "src/test/resources/setValueDate.csv")
     public void TestSetLevelValue(int expected, int levelValue) {
         Radio radio = new Radio();
@@ -36,9 +46,29 @@ public class RadioTest {
     }
 
     @ParameterizedTest
+    @CsvFileSource(files = "src/test/resources/nextNumberWithQuantitiesDate.csv")
+    public void TestNextNumberRadioStation(int expected, int currentNumber, int quantityRadioStation) {
+        Radio radio = new Radio(0, 100, 0, 0, quantityRadioStation, 0, quantityRadioStation - 1);
+        radio.setNumberRadioStation(currentNumber);
+        radio.nextNumberRadioStation();
+        int actual = radio.getNumberRadioStation();
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @ParameterizedTest
     @CsvFileSource(files = "src/test/resources/prevNumberDate.csv")
     public void TestPrevNumberRadioStation(int expected, int currentNumber) {
         Radio radio = new Radio();
+        radio.setNumberRadioStation(currentNumber);
+        radio.prevNumberRadioStation();
+        int actual = radio.getNumberRadioStation();
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @ParameterizedTest
+    @CsvFileSource(files = "src/test/resources/prevNumberWithQuantitiesDate.csv")
+    public void TestPrevNumberRadioStation(int expected, int currentNumber, int quantityRadioStation) {
+        Radio radio = new Radio(0, 100, 0, 0, quantityRadioStation, 0, quantityRadioStation - 1);
         radio.setNumberRadioStation(currentNumber);
         radio.prevNumberRadioStation();
         int actual = radio.getNumberRadioStation();
